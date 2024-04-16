@@ -1,6 +1,6 @@
-# LKS Cloud Computing DIY 2023
+# Gladi LKS Cloud Computing 2024
 
-Repository ini merupakan aplikasi berbasis web yang digunakan untuk seleksi LKS DIY 2023 bidang Cloud Computing.
+Repository ini merupakan aplikasi berbasis web yang digunakan untuk seleksi gladi LKS 2024 bidang Cloud Computing.
 
 ```
    ...    *    .   _  .
@@ -25,8 +25,8 @@ lkscc   |||
 ## Getting started
 ### Clone the repo:
 ```bash
-git clone --depth 1 https://github.com/denikn/lksdiycc2023
-cd lksdiycc2023
+git clone --depth 1 https://github.com/therusetiawan/gladilkscc2024
+cd gladilkscc2024
 rm -rf .git
 ```
 
@@ -54,7 +54,7 @@ DB_PASSWORD=
 ```bash
 AWS_ACCESS_KEY_ID=
 AWS_SECRET_ACCESS_KEY=
-AWS_DEFAULT_REGION=ap-southeast-2
+AWS_DEFAULT_REGION=ap-southeast-1
 AWS_BUCKET=
 AWS_USE_PATH_STYLE_ENDPOINT=false
 ```
@@ -65,9 +65,9 @@ QUEUE_DRIVER=sqs
 QUEUE_CONNECTION=sqs
 SQS_KEY=<aws_access_key_id>
 SQS_SECRET=<aws_secret_access_key>
-SQS_QUEUE=<queue name>
-SQS_REGION=ap-southeast-2
-SQS_PREFIX=https://sqs.ap-southeast-2.amazonaws.com/<aws_account_id>
+SQS_QUEUE=<queue_name>
+SQS_REGION=ap-southeast-1
+SQS_PREFIX=https://sqs.ap-southeast-1.amazonaws.com/<aws_account_id>
 ```
 
 ### Install dependencies:
@@ -82,7 +82,7 @@ php artisan migrate
 
 ### Running locally (in personal computer):
 ```bash
-php -S localhost:8000 -t public
+php artisan serve --host=0.0.0.0
 ```
 
 ## License and Copyright
